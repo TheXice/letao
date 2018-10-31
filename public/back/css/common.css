@@ -1,3 +1,20 @@
+/* 初始化 */
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+
+
 .login_body {
   background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
   height: 100vh;
@@ -15,4 +32,78 @@ height: 40px;
 line-height: 40px;  
 font-size: 18px;
 /* color: aquamarine; */
+}
+
+.left_aside {
+  width: 180px;
+  height: 100%;
+  background: #222d32;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+}
+.title {
+  width: 180px;
+  height: 50px;
+  background: #367FA9;
+  text-align: center;
+}
+.title a {
+  color: #fff;
+  font-size: 20px;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+
+}
+.user {
+  height: 180px;
+  padding-top: 30px;
+  text-align: center;
+}
+.user img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  
+}
+.user p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 40px;
+}
+.nav a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  /* text-align: center;
+   */
+   padding-left: 40px;
+   border-left:3px solid transparent;
+}
+.child {
+  display: none;
+}
+.child a {
+  padding-left: 60px;
+}
+.top_bar {
+  width: 100%;
+  height: 50px;
+  background: #3C8DBC;
+  padding-left: 180px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.top_bar a {
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align:center;
+  color: #fff;
+  font-size: 20px;
 }

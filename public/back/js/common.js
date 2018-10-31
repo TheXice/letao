@@ -31,3 +31,9 @@ $(document).ajaxStop(function () {
 
   }, 500)
 })
+
+$(function(){
+  $('.cat').on("click",function (){
+    $('.child').slideToggle()
+  })
+})
