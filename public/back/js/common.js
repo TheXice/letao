@@ -34,6 +34,35 @@ $(document).ajaxStop(function () {
 
 $(function(){
   $('.cat').on("click",function (){
-    $('.child').slideToggle()
+    $(this).next().stop().slideToggle()
+  });
+$(".top_menu").on('click',function(){
+  $('.left_aside').toggleClass('hidemenu' );
+  $('.right_main').toggleClass('hidemenu ');
+  $('.top_bar').toggleClass('hidemenu ');
+})
+
+
+
+})
+
+//模态框
+$(function(){
+  $('.top_loginout').on('click',function(){
+    // 显示模态框
+    $('#loginout').modal('show');
+  });
+  $('#out').on('click',function(){
+    $.ajax({
+      url:"/employee/employeeLogout",
+      type:"get",
+      dataType:"json",
+      success:function(info){
+          console.log(info);
+          if(info.success){
+          location.href = "login.html";
+          }
+      }
+    })
   })
 })
