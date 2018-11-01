@@ -22,7 +22,9 @@ ul {
   background-color: #1D1F21;
   border-left: 3px solid #069;
 }
-
+.mb_20{
+  margin-bottom: 20px;
+}
 .login_body {
   background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
   height: 100vh;
