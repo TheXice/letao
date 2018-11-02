@@ -150,3 +150,12 @@ font-size: 18px;
 .red {
   color:#A94442;
 }
+#imgbox img {
+  width: auto;
+  height: 100px;
+}
+.top_content tbody img {
+  width: auto;
+  height: 50px;
+  margin: 0 auto;
+}
